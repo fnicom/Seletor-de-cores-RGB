@@ -39,9 +39,9 @@
 <body>
 
     <div class="picker">
-        Red <input type="range" min="0" max="255" step="1" id="red" value="115">
-        Green <input type="range" min="0" max="255" step="1" id="green" value="10">
-        Blue <input type="range" min="0" max="255" step="1" id="blue" value="162">
+        Vermelho <input type="range" min="0" max="255" step="1" id="vermelho" value="115">
+        Verde <input type="range" min="0" max="255" step="1" id="verde" value="10">
+        Azul <input type="range" min="0" max="255" step="1" id="azul" value="162">
         <div id="display"></div>
     </div>
     <script type="text/javascript">
@@ -49,12 +49,12 @@
 
         for(var i= 0; i < input.length; i++){
             input[i].addEventListener("input", function(){
-                var red = document.getElementById("red").value,
-                    green = document.getElementById("green").value,
-                    blue =  document.getElementById("blue").value;
+                var vermelho = document.getElementById("vermelho").value,
+                    verde = document.getElementById("verde").value,
+                    azul =  document.getElementById("azul").value;
 
                 var display = document.getElementById("display");
-                display.style.background = "rgb(" + red + "," + green + ", " + blue + ")";                    
+                display.style.background = "rgb(" + vermelho + "," + verde + ", " + azul + ")";                    
         });
     }    
     </script>
